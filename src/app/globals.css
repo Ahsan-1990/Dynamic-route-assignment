@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.header{
+  background-color: #050590a6;
+  color: aliceblue;
+  height: 50px;
+}
+
+.header-buttons{
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  font-size: 30px;
+  
+}
