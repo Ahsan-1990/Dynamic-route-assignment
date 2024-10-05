@@ -1,27 +1,37 @@
+import React from "react";
 import Link from "next/link"
 
-export default function Countries (){
+const Country = () => {
   
  
     return(
         <div>
 
-        <h3>Counties List</h3>
-        <ol>
+        <h1 className="font-bold underline">COUNTRIES LIST</h1><br/>
+        <ol className="font-bold">
             <li>
-                <Link href={"/countries/country-Pakistan"}> Pakistan</Link>
+                <Link href={"/countries/pakistan"}> Pakistan</Link>
             </li>
             <li>
-                <Link href={"/countries/country-India"}> India</Link>
+                <Link href={"/countries/india"}> India</Link>
             </li>
             <li>
-                <Link href={"/countries/country-China"}> Japan</Link>
+                <Link href={"/countries/china"}> China</Link>
             </li>
             <li>
-                <Link href={"/countries/country-USA"}> USA</Link>
+                <Link href={"/countries/japan"}> USA</Link>
+                
+            </li>
+
+            <li>
+                <Link href={"/countries/banagladesh"}> Banagladesh</Link>
+                
             </li>
         </ol>
 
         </div>
+        
     )
 }
+
+export default Country;

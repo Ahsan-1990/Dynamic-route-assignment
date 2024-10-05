@@ -1,15 +1,70 @@
 
+import React from "react";
+import { country_data } from "@/app/country-details/data";
 
-export default function Country({params}:{params:{country:string}}) {
-    
-    return(
+const CountryName = ({ params }: { params: { country: string } }) => {
+    if (params.country == "pakistan") {
+      return (
         <div>
-        
-        
-        <h1>{params.country}</h1>
-        <h1>Population</h1>
-        <h2>Capital</h2>
-
+          <h1>
+            Country: {country_data.pakistan.name}
+          </h1>
+          <p>Name: {country_data.pakistan.name}</p>
+          <p>Population: {country_data.pakistan.population}</p>
+          <p>Capital: {country_data.pakistan.capital}</p>
         </div>
-    )
-}
+      );
+    } else if (params.country == "india") {
+      return (
+        <div>
+          <h1>
+            Country: {country_data.india.name}
+          </h1>
+          <p>Name: {country_data.india.name}</p>
+          <p>Population: {country_data.india.population}</p>
+          <p>Capital: {country_data.india.capital}</p>
+        </div>
+      );
+    } else if (params.country == "china") {
+      return (
+        <div>
+          <h1>
+            Country: {country_data.china.name}
+          </h1>
+          <p>Name: {country_data.china.name}</p>
+          <p>Population: {country_data.china.population}</p>
+          <p>Capital: {country_data.china.capital}</p>
+        </div>
+      );
+    } else if (params.country == "japan") {
+      return (
+        <div>
+          <h1>
+            Country: {country_data.japan.name}
+          </h1>
+          <p>Name: {country_data.japan.name}</p>
+          <p>Population: {country_data.japan.population}</p>
+          <p>Capital: {country_data.japan.capital}</p>
+        </div>
+      );
+    } else if (params.country == "bangladesh") {
+      return (
+        <div>
+          <h1>
+            Country: {country_data.bangladesh.name}
+          </h1>
+          <p>Name: {country_data.bangladesh.name}</p>
+          <p>Population: {country_data.bangladesh.population}</p>
+          <p>Capital: {country_data.bangladesh.capital}</p>
+        </div>
+      );
+    } else {
+      return (
+        <h1>
+           Country not found!
+        </h1>
+      );
+    }
+  };
+  
+  export default CountryName;
